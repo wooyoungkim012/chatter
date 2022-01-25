@@ -1,0 +1,94 @@
+html {
+  font-size: 8px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 150px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+.App {
+  background: rgb(61, 72, 233);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255, 0.3);
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url("https://cdn.pixilart.com/photos/large/14f6356136adf02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.text-input {
+  width: 100%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  background: black;
+  padding: 0 1rem;
+  color: white;
+}
+.send {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 0.2rem;
+  cursor: pointer;
+}
