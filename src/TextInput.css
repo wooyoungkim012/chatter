@@ -1,0 +1,30 @@
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.text-input {
+  width: 100%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  background: black;
+  padding: 0 1rem;
+  color: white;
+}
+.send {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 0.2rem;
+  cursor: pointer;
+}
