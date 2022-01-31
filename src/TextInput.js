@@ -21,8 +21,9 @@ function TextInput(props) {
       <input className='text-input'
       value={text}
       onChange={(e) => setText(e.target.value)}
+      onKeyPress={onKeyPress}
       />
-      <button className='send' onClick={send}>↑</button>
+      <button className='send' onClick={send} >↑</button>
     </footer>
     );
 }
