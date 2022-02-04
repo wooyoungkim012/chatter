@@ -78,3 +78,7 @@ html {
   margin: 0.2rem;
   border-radius: 0.3rem;
 }
+
+.text-input > input {
+  width: calc(100% - 50px);
+}
