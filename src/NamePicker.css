@@ -1,0 +1,58 @@
+html {
+  font-size: 8px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 150px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.setName {
+  border-radius: 10px;
+  border: none;
+  background: none;
+  padding: 0px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.setName:hover {
+  cursor: pointer;
+}
+
+#changeName {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 0.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

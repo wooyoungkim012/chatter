@@ -34,8 +34,8 @@ let timerId=0;
 
 
 //From here
-// let days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-let days = [31, 28]
+let days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+//let days = [31, 28]
 let prev = "01/01/2018 00:00";
 let day = 2;
 let month = 0;

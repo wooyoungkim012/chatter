@@ -37,7 +37,7 @@ html {
 
 .header {
   height: 4rem;
-  width: 100%;
+  width: 100vw;
   border-bottom: 2px solid white;
   display: flex;
   align-items: center;
@@ -81,4 +81,9 @@ html {
 
 .text-input > input {
   width: calc(100% - 50px);
+}
+
+#namepicker {
+  position: absolute;
+  right: 2em;
 }

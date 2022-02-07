@@ -3,6 +3,7 @@ import TextInput from "./TextInput";
 import { useState } from "react";
 import Message from "./Message";
 import Camera from 'react-snap-pic'
+import NamePicker from "./NamePicker";
 
 // this is a Component
 
@@ -12,6 +13,7 @@ function App() {
   // the initial value is an empty array
   const [messages, setMessages] = useState([]);
   const [showCamera, setShowCamera] = useState(false)
+  // const [editName, setEditName] = useState(false);
   function sendMessage(text) {
     // create new message object
     if (!text) return;
@@ -26,7 +28,7 @@ function App() {
   let takePicture = (img) => {
     console.log(img)
     setShowCamera(false)
-}
+  }
 
   console.log(messages);
   return (
@@ -34,6 +36,7 @@ function App() {
       <header className="header">
         <div className="logo" />
         <span className="title">CHATTER!</span>
+        <div id='namepicker'><NamePicker /></div>
       </header>
       <div className="messages">
         {messages.map((msg) => {
