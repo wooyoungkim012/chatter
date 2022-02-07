@@ -20,14 +20,14 @@ function App() {
       time: Date.now(),
       user: "Woo Young",
     };
-
     setMessages([newMessage, ...messages]);
   }
 
-  function takePicture(img) {
+  let takePicture = (img) => {
     console.log(img)
     setShowCamera(false)
 }
+
   console.log(messages);
   return (
     <div className="App">
@@ -40,8 +40,9 @@ function App() {
           return <Message {...msg} />;
         })}
       </div>
-      <Camera {...showCamera && <Camera takePicture={takePicture} />} />
-      <TextInput sendMessage={sendMessage} showCamera={()=>setShowCamera(true)}/>
+      
+      <TextInput sendMessage={text=> sendMessage(text)}  showCamera={()=>setShowCamera(true)}/>
+      {showCamera && <Camera takePicture={takePicture} />}
     </div>
   );
 }
